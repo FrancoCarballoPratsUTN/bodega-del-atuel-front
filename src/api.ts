@@ -14,7 +14,9 @@ import type {
   VinosPage,
 } from "./types";
 
-const API_BASE = "https://bodega-del-atuel-back.onrender.com/"
+const API_BASE =
+  (import.meta.env.VITE_API_URL as string | undefined)?.replace(/\/$/, "") ||
+  "/api";
 
 interface ErrorPayload {
   error?: string;
