@@ -71,7 +71,7 @@ function AppContent() {
     <div className="min-h-screen bg-[#F8F9FA] lg:flex">
       <a
         href="#main-content"
-        className="sr-only rounded-md bg-wine-900 px-4 py-2 text-sm font-bold text-white focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus:z-[60]"
+        className="sr-only rounded-md bg-wine-900 px-4 py-2 text-sm font-bold text-white focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus:z-60"
       >
         Saltar al contenido
       </a>
@@ -83,9 +83,7 @@ function AppContent() {
           </span>
           <div>
             <p className="text-base font-bold leading-tight">Bodega del Atuel</p>
-            <p className="mt-0.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-gold-300">
-              Gestión TPI
-            </p>
+
           </div>
         </div>
 
@@ -122,9 +120,7 @@ function AppContent() {
             </span>
             <div>
               <p className="text-sm font-bold text-wine-900">Bodega del Atuel</p>
-              <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-wine-700/55">
-                Gestión TPI
-              </p>
+
             </div>
           </div>
           <nav
@@ -158,7 +154,7 @@ function AppContent() {
           id="main-content"
           className="flex-1 px-4 py-6 sm:px-6 lg:px-8 lg:py-8"
         >
-          <div className="mx-auto w-full max-w-[1400px]">
+          <div className="mx-auto w-full max-w-350">
             {screen === "catalogo" ? (
               <CatalogoScreen
                 notice={notice}
